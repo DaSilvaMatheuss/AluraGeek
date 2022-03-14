@@ -1,3 +1,230 @@
-html{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family:'Raleway', sans-serif;
+}
+
+header{
+    height: 264px;
+}
+
+main{
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.top-header{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1em;
+}
+
+.top-left-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left-content input{
+    display: none;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+}
+
+.btn{
+    width: 133px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    border: 1px solid;
+    box-sizing: border-box;
+    background-color: transparent;    
+}
+
+.btn-primary{
+    color: #2A7AE4;
+    border-color: #2A7AE4;    
+}
+
+.btn-secondary{
+    color: white;
+    background-color: #2A7AE4;
+    border: none;
+}
+
+a{
+    color: #2A7AE4;
+    font-weight: 600;
+}
+
+.logo-alurageek{
+    height: 30px;
+    width: 100px;
+    padding-right: 2em;
+}
+
+.hero{
+    
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 2%, rgba(0,0,0,0.6755077030812324) 48%), url("img/banner-v2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 192px;
+    box-sizing: border-box;
+}
+
+.hero h2{
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.hero-content{
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+.category-products-group{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category-products-group h3{
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    rgb(26, 26, 26);
+}
+
+.category-top-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.category-products-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.product{
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product h4{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px 0;
+    display: block;
+    color: rgb(26, 26, 26);
+}
+
+.product p{
+    font-size: 16px;
+    font-weight: 700; 
+    display: block;
+    margin: 4px 0;
+}
+
+.product a{  
+    display: block;
+    margin: 4px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product img{
+    display: block;
+    height: 174px;
+    width: 160px;
+}
+
+footer{
+    background-color: rgb(234, 242, 253);
+    padding: 8px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px auto;
+}
+
+.footer-menus a{
+    color: rgb(82, 82, 82);
+    margin: 8px;
+}
+
+.contato fieldset{
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(82, 82, 82);
+}
+
+.contato input{
+    border: none;
+    width: 328px;
+    height: 56px;
+    margin: 8px auto;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.3);
+}
+
+.contato input::placeholder{
+    color: rgb(104, 104, 104);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px;
+}
+
+#submit{
+    width: 151px;
+    height: 40px;
+}
+
+.desenvolvido-por{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    height: 102px;
 }
