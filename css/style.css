@@ -14,9 +14,10 @@ main{
     padding: 16px;
     box-sizing: border-box;
 }
-
-.top-header{
-    
+a{
+    color:#2A7AE4;
+}
+.top-header{    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -169,7 +170,7 @@ a{
 }
 
 footer{
-    background-color: rgb(234, 242, 253);
+    background-color: rgb(207, 219, 236);
     padding: 8px;
 }
 
