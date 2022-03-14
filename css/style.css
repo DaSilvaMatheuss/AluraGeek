@@ -71,14 +71,14 @@ a{
 }
 
 .logo-alurageek{
-    height: 30px;
-    width: 100px;
+    height: 32px;
+    width: 110px;
     padding-right: 2em;
 }
 
 .hero{
     
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 2%, rgba(0,0,0,0.6755077030812324) 48%), url("img/banner-v2.jpg");
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 2%, rgba(0,0,0,0.6755077030812324) 48%), url("../img/banner-v2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ a{
 }
 
 .category-products-group{
-    margin: 0;
+    margin: 2em auto;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@ a{
     display: block;
     font-size: 22px;
     font-weight: 700;
-    rgb(26, 26, 26);
+    color: rgb(26, 26, 26);
 }
 
 .category-top-row{
@@ -228,4 +228,88 @@ footer{
     justify-content: center;
     font-size: 12px;
     height: 102px;
+}
+
+@media screen and (min-width: 500px){
+    .category-products-row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;          
+    }
+}
+
+@media screen and (min-width: 790px){
+    .category-products-row{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .logo-alurageek{
+        width: 200px;
+        height: 50px;
+    }
+    
+    .top-left-content input{
+        display: block;
+        width: 393px;
+        height: 40px;
+        background-image: url("../img/lupa.png");
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 350px center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    header{
+        height: 470px;
+    }
+
+    .top-header{
+        justify-content: space-around;
+    }
+
+    
+
+    
+
+    .hero{
+        height: 352px;
+    }
+
+    .hero-content{
+        padding-top: 200px;
+        padding-left: 40px;
+    }
+
+    .category-products-row{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    footer{
+        padding: 0 10em;
+    }
+
+    .footer-content{
+        
+        margin: auto;
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .footer-menus{
+        align-items: flex-start;
+    }
+
+    .contato fieldset{
+
+        display: flex;
+        flex-direction: column;
+    }
 }
