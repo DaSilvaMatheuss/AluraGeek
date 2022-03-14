@@ -230,19 +230,48 @@ footer{
     height: 102px;
 }
 
+.collapse{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.collapse input{
+    width: 250px;
+}
+
+.collapse input::placeholder{
+    text-align: center;
+}
+
 @media screen and (min-width: 500px){
+
+    .logo-alurageek{
+        width: 180px;
+        height: 40px;
+    }
     .category-products-row{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 8px;
         grid-row-gap: 8px;          
     }
+
+    .hero{
+        background-size: cover;
+        background-position: top center;
+    }
 }
 
-@media screen and (min-width: 790px){
+@media screen and (min-width: 700px){
     .category-products-row{
         grid-template-columns: repeat(4, 1fr);
 
+    }
+
+    .hero{
+        background-size: cover;
+        background-position: top center;
     }
 
     .icon{
