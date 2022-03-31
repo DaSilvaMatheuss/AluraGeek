@@ -423,7 +423,6 @@ legend + * {
 }
 
 [type=search] {
-  outline-offset: -2px;
   -webkit-appearance: textfield;
 }
 
@@ -2469,7 +2468,6 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2477,7 +2475,7 @@ textarea.form-control-lg {
   color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
-  border-radius: 0.25em;
+  /*border-radius: 0.25em;*/
 }
 .form-check-input[type=radio] {
   border-radius: 50%;
@@ -2746,7 +2744,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: #e9ecef;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  /*border-radius: 0.25rem;*/
 }
 
 .input-group-lg > .form-control,
@@ -2755,7 +2753,7 @@ textarea.form-control-lg {
 .input-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
-  border-radius: 0.3rem;
+  /*border-radius: 0.3rem;*/
 }
 
 .input-group-sm > .form-control,
@@ -2764,7 +2762,7 @@ textarea.form-control-lg {
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-radius: 0.2rem;
+  /*border-radius: 0.2rem;*/
 }
 
 .input-group-lg > .form-select,

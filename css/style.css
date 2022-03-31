@@ -13,6 +13,7 @@ html, body{
 .main-index{
     padding: 16px;
     box-sizing: border-box;
+    background-color: #fefefe;
 }
 a{
     color:#2A7AE4;
@@ -78,12 +79,24 @@ a{
 }
 
 .search input{
-    border: 1px solid #2A7AE4;
-    border-radius: 6px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid transparent;
+    background: #F5F5F5;
+    border-radius: 20px;
     margin: 8px 16px;
     width: 60%;
+    height: 25px;
     display: block;
     outline: none;
+}
+
+.search svg{
+    position: relative;
+    left: -40px;
+    top: 13px;
+    width: 10px;
+    color: #2A7AE4;
 }
 
 .search input::placeholder{
@@ -146,8 +159,12 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 8px;
     padding: 0;
+}
+
+.category-top-row h3{
+    border-bottom: 2px solid #2A7AE4;
 }
 
 .product{
@@ -177,6 +194,13 @@ a{
     margin: 4px 0;
     font-size: 14px;
     font-weight: 700;
+}
+
+.product:hover{
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #2A7AE4;
 }
 
 .product img{
@@ -331,13 +355,17 @@ footer{
     }
     
     .search input{
-        border: 1px solid #2A7AE4;
-        border-radius: 6px;
+        border: 1px solid transparent;
+        border-radius: 20px;
         margin: 8px 16px;
         width: 300px;
         height: 40px;
         display: block;
         outline: none;
+    }
+
+    .search svg{
+        top: 20px;
     }
 }
 
