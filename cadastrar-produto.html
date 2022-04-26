@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus da Silva">
+    <meta name="Description" content="Ecommerce AluraGeek desenvolvido no desafio Alura Challenge, como forma de estudo">
+    <title>AluraGeek</title>    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="./js/imports.js"></script>
+    <title>Produtos</title>
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <div class="cadastra-produto">
+            <h1>Adicionar novo produto</h1>
+            <fieldset id="novo-produto">
+                <div>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                    <input type="file" name="imagem-produto" id="img-produto">
+                <label for="img-produto">Adicione uma imagem ao produto</label>
+                </div>                
+                <input type="text" name="nome-produto" id="nome-produto" class="form-control" placeholder="Nome do produto">
+                <input type="text" name="preco-produto" id="preco-produto" class="form-control" placeholder="Preço do produto">
+                <input type="text" name="descricao-produto" id="descricao-produto" class="form-control" placeholder="Descrição">
+                <button class="btn btn-secondary">Cadastrar</button>
+            </fieldset>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+</body>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="./js/imports.js"></script>
+</html>
